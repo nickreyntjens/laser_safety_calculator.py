@@ -94,6 +94,7 @@ As we can see from the screenshots above, by increasing the initial beam size, w
 ![Screenshot 3](screenshot_10_50.png)
 
 As we can see from the screenshots above, when putting the focal point at 10 meter, for example if we want to shoot up from a cart below a tree, up into the canope, where certain insects may be present, or may have put their eggs, the nominal safety zone is still a very workable number.
+We can make the nominal saferty zone so small because we are free to increase our initial beam size. These optics will be more expensive, but are possible.
 
 ## Conclusion
 
