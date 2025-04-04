@@ -88,8 +88,12 @@ Below are example screenshots of the program in action:
 ![Screenshot 1](screenshot_13_4.png)  
 ![Screenshot 2](screenshot_13_8.png)
 
+As we can see from the screenshots above, by increasing the initial beam size, we can make the nominal safety zone very small.
+
 ### Focal Point = 8 m
 ![Screenshot 3](screenshot_10_50.png)
+
+As we can see from the screenshots above, when putting the focal point at 8 meter, for example if we want to shoot up from a cart below a tree, up into the canope, where certain insects may be present, or may have put their eggs, the nominal safety zone is still a very workable number.
 
 ## Conclusion
 
