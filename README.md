@@ -85,11 +85,11 @@ python laser_safety_calculator.py
 Below are example screenshots of the program in action:
 
 ### Focal Point = 1 m
-![Screenshot 1](screenshot1.png)  
-![Screenshot 2](screenshot2.png)
+![Screenshot 1](screenshot_13_4.png')  
+![Screenshot 2](screenshot_13_8.png')
 
 ### Focal Point = 8 m
-![Screenshot 3](screenshot3.png)
+![Screenshot 3](screenshot_10_50.png')
 
 ## Conclusion
 
