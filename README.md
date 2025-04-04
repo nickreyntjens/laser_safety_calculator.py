@@ -63,11 +63,22 @@ The safety calculator performs the following computations. The formulas are embe
 
 6. **Nominal Safety Distance**
 
-   The safe distance *x* behind the focal point is determined by iterating until the energy density falls below 10,000 J/m². The Nominal Safety Distance is then calculated as:
+   The safe distance *x* behind the focal point is determined by iterating until the energy density falls below 10,000 J/m². The Nominal Safety Distance is then calculated as: Nominal Safety Distance = f + x
 
-   ![Nominal Safety Distance Formula](nominal_safety_distance_formula.png)
+## How to Run and Dependencies
 
-   which means: Nominal Safety Distance = f + x
+### Dependencies
+
+This project is written in **Python 3.x**. You will also need:
+- **NumPy** – for numerical calculations  
+- **Matplotlib** – for plotting and interactive sliders  
+
+Install them via pip:
+
+```bash
+pip install numpy matplotlib
+python laser_safety_calculator.py
+```
 
 ## Screenshots
 
