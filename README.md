@@ -98,8 +98,4 @@ We can make the nominal saferty zone so small because we are free to increase ou
 
 ## Conclusion
 
-The results demonstrate that the nominal safety zone is not much wider for a 1 m focal point. Even with an 8 m focal point, the safety distance remains feasible when combined with additional safety sensors. This indicates that the laser system can be made safe across a range of configurations with appropriate sensor integration and safety measures.
-
----
-
-*Note: Replace the image filenames with the actual filenames of your formula screenshots. These images must be committed to the same directory as the README.md for the links to work correctly.*
+The results demonstrate that the nominal safety zone is not much wider for a 1.3 m focal point. Even with an 10 m focal point, the safety distance remains feasible when combined with additional safety sensors. This indicates that the laser system can be made safe across a range of configurations with appropriate sensor integration and safety measures.
