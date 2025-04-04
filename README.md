@@ -1,13 +1,12 @@
 # Laser Safety Calculator
 
-The **Laser Safety Calculator** is an interactive tool that evaluates the nominal safety distance for a laser system. It computes key parameters such as the Rayleigh range and the distance behind the focal point where the energy density (in J/m²) on a target (simulated by an extremely small "eye" aperture) falls below a specified safety threshold. This allows users to determine the *Nominal Ocular Hazard Distance (NOHD)* for a given laser configuration.
-The thresshold 10000 J / M^2 is taken from international eye safety standards and is the MPE for 1550 nm. Since 1550 nm cannot reach the retina, this wavelenght is preferred.
+The **Laser Safety Calculator** is an interactive tool that evaluates the nominal safety distance for a laser system. It computes key parameters such as the Rayleigh range and the distance behind the focal point where the energy density on a target (simulated by an extremely small "eye" aperture) falls below a specified safety threshold. This allows users to determine the *Nominal Ocular Hazard Distance (NOHD)* for a given laser configuration.
 
 ## Functionality
 
 The calculator uses several input parameters, adjustable via interactive sliders:
 
-- **Max Focal Length:** Maximum focal length (0.5 m to 10 m).
+- **Max Focal Length:** Maximum focal length (from 0.5 m to 10 m).
 - **Selected Focal Length:** A specific focal length value within the above range for which output values are computed.
 - **Wavelength:** Laser wavelength in nanometers.
 - **M² (Beam Quality):** A factor representing the beam quality.
@@ -15,57 +14,60 @@ The calculator uses several input parameters, adjustable via interactive sliders
 - **Laser Power:** The laser output power in Watts.
 - **Exposure Time:** The duration for which the laser is on (in seconds, minimum 0.001 s).
 
-For worst-case analysis, the eye is simulated as an infinitely small aperture (constant at \(1 \times 10^{-10}\) m) to capture the higher concentration of the Gaussian beam distribution.
+For worst-case analysis, the eye is simulated as an infinitely small aperture (set to 1×10⁻¹⁰ m) to capture the highest concentration of the Gaussian beam distribution.
 
 ## Calculation Steps
 
-The safety calculator performs the following computations. Instead of rendering LaTeX, we embed screenshots of the formulas used:
+The safety calculator performs the following computations. The formulas are embedded as screenshots, so they render nicely:
 
-1. **Rayleigh Range Calculation:**  
-   The Rayleigh range \( z_R \) is calculated using:
-   
+1. **Rayleigh Range Calculation**
+
+   The Rayleigh range (denoted as *z<sub>R</sub>*) is calculated with the formula:
+
    ![Rayleigh Range Formula](rayleigh_range_formula.png)
-   
-   where:
-   - \( M^2 \) is the beam quality factor,
-   - \( \lambda \) is the wavelength (in meters),
-   - \( f \) is the focal length (in meters),
-   - \( w_{in} \) is the input beam radius (in meters).
 
-2. **Beam Waist Calculation:**  
-   The beam waist \( w_0 \) at the focal point is given by:
-   
+   where:
+   - *M²* is the beam quality factor.
+   - *λ* is the wavelength (in meters).
+   - *f* is the focal length (in meters).
+   - *w<sub>in</sub>* is the input beam radius (in meters).
+
+2. **Beam Waist Calculation**
+
+   The beam waist at the focal point (denoted as *w<sub>0</sub>*) is given by:
+
    ![Beam Waist Formula](beam_waist_formula.png)
 
-3. **Beam Radius as a Function of Distance \( x \) Behind the Focal Point:**  
-   The beam radius \( w(x) \) is determined by:
-   
+3. **Beam Radius as a Function of Distance**
+
+   The beam radius *w(x)*, at a distance *x* behind the focal point, is determined by:
+
    ![Beam Radius Formula](beam_radius_formula.png)
 
-4. **Power Enclosed in a Circular Aperture (Simulated Eye):**  
-   The fraction of beam power captured by an aperture of radius \( r \) is:
-   
+4. **Power Enclosed in a Circular Aperture**
+
+   The fraction of beam power captured by a circular aperture (representing the "eye") is computed using:
+
    ![Enclosed Power Formula](enclosed_power_formula.png)
 
-5. **Energy Density Calculation:**  
-   The energy density \( E \) (in J/m²) delivered to the eye over the exposure time \( t \) is computed as:
-   
-   ![Energy Density Formula](energy_density_formula.png)
-   
-   where:
-   - \( P \) is the laser power,
-   - \( t \) is the exposure time,
-   - \( r \) is the eye radius.
+5. **Energy Density Calculation**
 
-6. **Nominal Safety Distance Determination:**  
-   The safe distance \( x \) is found by iterating until \( E \) falls below 10,000 J/m², and the *Nominal Safety Distance* is:
-   
+   The energy density *E* (in J/m²) delivered to the eye over an exposure time *t* is calculated as:
+
+   ![Energy Density Formula](energy_density_formula.png)
+
+   where:
+   - *P* is the laser power.
+   - *t* is the exposure time.
+   - *r* is the eye radius.
+
+6. **Nominal Safety Distance**
+
+   The safe distance *x* behind the focal point is determined by iterating until the energy density falls below 10,000 J/m². The Nominal Safety Distance is then calculated as:
+
    ![Nominal Safety Distance Formula](nominal_safety_distance_formula.png)
-   
-   That is,  
-   $$
-   \text{Nominal Safety Distance} = f + x
-   $$
+
+   which means: Nominal Safety Distance = f + x
 
 ## Screenshots
 
