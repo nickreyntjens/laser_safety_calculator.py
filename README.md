@@ -1,6 +1,6 @@
 # Laser Safety Calculator
 
-The **Laser Safety Calculator** is an interactive tool that evaluates the nominal safety distance for a laser system. It computes key parameters such as the Rayleigh range and the distance behind the focal point where the energy density on a target (simulated by an extremely small "eye" aperture) falls below a specified safety threshold. This allows users to determine the *Nominal Ocular Hazard Distance (NOHD)* for a given laser configuration.
+The **Laser Safety Calculator** is an interactive tool that evaluates the nominal safety distance for a laser system. Specific for photonic insecticides optical units designed to track and shoot target insects. (https://www.photonicinsecticides.com) It computes key parameters such as the Rayleigh range and the distance behind the focal point where the energy density on a target (simulated by an extremely small "eye" aperture) falls below a specified safety threshold. This allows users to determine the *Nominal Ocular Hazard Distance (NOHD)* for a given laser configuration.
 
 ## Functionality
 
